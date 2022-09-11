@@ -5,37 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Fomulário &blacktriangleright;</title>
 </head>
 
 <body>
-
+    <!--Cabeçalho-->
     <header>
         <h1 id="title">Formulário de pesquisa</h1>
         <p id="description">Projeto <i>free Code Camp</i></p>
     </header>
     <main>
-
+        <!--Conteúdo-->
         <form action="#" id="survey-form">
             <div class="form-group">
-                <label for="name_label" id="name_label">Name</label>
+                <label for="name-label" id="name-label" >Name</label>
                 <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
             </div>
             <div class="form-group">
-                <label for="email_label" id="email_label">E-mail</label>
+                <label for="email-label" id="email-label">E-mail</label>
                 <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
             </div>
 
             <div class="form-group age">
-                <label for="number_label" id="age_label">Age</label>
+                <label for="number-label" id="number-label">Age</label>
                 <input type="number" name="number" id="number" min="1" max="100" placeholder="Digite a sua idade"
                     value="number">
             </div>
 
             <div class="form-group">
                 <p>Qual opção descreve sua função atualmente?</p>
-                <select name="Teste" id="dropdown">
+                <select name="dropdown" id="dropdown">
                     <option disabled selected value="value_default">Selecione a sua situação atual</option>
                     <option value="estudando">Estudando</option>
                     <option value="trabalhando">Trabalhando</option>
@@ -118,7 +118,7 @@
                 <input type="file" name="file" id="file">
             </div>
             <div class="form-group">
-                <button type="submit" class="submit-button">Enviar</button>
+                <button type="submit" id= 'submit'class="submit-button">Enviar</button>
             </div>
         </form>
     </main>
