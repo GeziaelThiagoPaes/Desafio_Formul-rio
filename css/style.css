@@ -3,7 +3,7 @@ body {
     background-color: rgb(10, 10, 1);
     line-height: 1.5;
     color: white;
-    background-image: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg');
     background-size: cover;
 
 }
@@ -13,6 +13,7 @@ header {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    color: rgb(227, 87, 87);
 }
 
 

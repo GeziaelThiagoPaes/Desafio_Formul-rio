@@ -17,9 +17,9 @@
     </header>
     <main>
         <!--Conteúdo-->
-        <form action="#" id="survey-form">
+        <form id="survey-form">
             <div class="form-group">
-                <label for="name-label" id="name-label" >Name</label>
+                <label for="name-label" id="name-label">Name</label>
                 <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
             </div>
             <div class="form-group">
@@ -29,8 +29,7 @@
 
             <div class="form-group age">
                 <label for="number-label" id="number-label">Age</label>
-                <input type="number" name="number" id="number" min="1" max="100" placeholder="Digite a sua idade"
-                    value="number">
+                <input type="number" name="number" id="number" min="1" max="100" placeholder="Digite a sua idade">
             </div>
 
             <div class="form-group">
@@ -39,7 +38,7 @@
                     <option disabled selected value="value_default">Selecione a sua situação atual</option>
                     <option value="estudando">Estudando</option>
                     <option value="trabalhando">Trabalhando</option>
-                    <option value="nao_dizer">Prefiro não dizer</option>
+                    <option value="Prefiro nao dizer">Prefiro não dizer</option>
                     <option value="outros">Outros</option>
 
                 </select>
@@ -47,17 +46,17 @@
             <div class="form-group">
                 <p>Você recomendaria o <i>site free Code Camp</i> para um amigo?</p>
                 <label>
-                    <input type="radio" name="radio" id="sim" value="yes">
+                    <input type="radio" name="radio" id="sim" class="radio" value="sim">
                     Sim
                 </label>
 
                 <label>
-                    <input type="radio" name="radio" id="nao" value="no">
+                    <input type="radio" name="radio" id="nao" class="radio" value="nao">
                     Não
                 </label>
 
                 <label>
-                    <input type="radio" name="radio" id="talvez" value="maybe">
+                    <input type="radio" name="radio" id="talvez" class="radio" value="talvez">
                     Talvez
                 </label>
 
@@ -118,7 +117,7 @@
                 <input type="file" name="file" id="file">
             </div>
             <div class="form-group">
-                <button type="submit" id= 'submit'class="submit-button">Enviar</button>
+                <button type="submit" id='submit' class="submit-button">Enviar</button>
             </div>
         </form>
     </main>
@@ -126,6 +125,9 @@
     <footer>
         <p id="footer_page">&copy; Geziael Thiago</p>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
