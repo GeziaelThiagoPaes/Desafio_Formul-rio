@@ -1,4 +1,4 @@
-let submit = document.getElementById('submit');
+
 const firebaseConfig = {
     apiKey: "AIzaSyDo1W3_9ps3t1hcXPI0vjKbq_lUitrcbbM",
     authDomain: "formulario-9b302.firebaseapp.com",
@@ -8,6 +8,7 @@ const firebaseConfig = {
     messagingSenderId: "222265617301",
     appId: "1:222265617301:web:2d474b3268c9041152249c"
 };
+
 
 //inicializar o firebase
 firebase.initializeApp(firebaseConfig);
@@ -20,13 +21,11 @@ const db = firestore.collection("form");
 // criar o evento listener para acessar o form (html)
 
 submit.addEventListener('click', (e) => {
-    e.preventDefault();
 
     //pegar os valores do formulário html (id)
-
-    let name = document.getElementById('name').value;
+    let nome = document.getElementById('name').value;
     let email = document.getElementById('email').value;
-    let age = document.getElementById('number').value;
+    let idade = document.getElementById('number').value;
     let dropdown = document.getElementById('dropdown').value;
     let sim = document.getElementById('sim').value;
     let nao = document.getElementById('nao').value;
@@ -38,17 +37,18 @@ submit.addEventListener('click', (e) => {
     let dados = document.getElementById('dados').value;
     let bd = document.getElementById('BD').value;
     let comentario = document.getElementById('text').value;
- 
-   
-    
+    let submit = document.getElementById('submit');
+    e.preventDefault();
 
+    if (email=='' || nome=='') {
+        alert('Preencher os campos obrigatórios!');
 
-    //salvar o form no banco de dados
-
+    }else{
+        //salvar o form no banco de dados
     db.doc().set({
-        Nome: name,
+        Nome: nome,
         Email: email,
-        Idade: age,
+        Idade: idade,
         Função: dropdown,
         Recomenda: sim,
         Recomenda: nao,
@@ -62,10 +62,13 @@ submit.addEventListener('click', (e) => {
         Comentario: comentario
 
     }).then(() => {
-        console.log("Data Saved");
-       alert('Formulário enviado com sucesso!',location.reload());
-
+            alert('Formulário enviado com sucesso!');
+            console.log("Data Saved");
+             location.reload()
     }).catch((error) => {
         console.log(error);
     })
+    };
+       
 })
+

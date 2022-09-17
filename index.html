@@ -7,28 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Fomulário &blacktriangleright;</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
 </head>
 
 <body>
     <!--Cabeçalho-->
     <header>
         <h1 id="title">Formulário de pesquisa</h1>
-        <p id="description">Projeto <i>free Code Camp</i></p>
+        <p id="description">Projeto <i>FreeCodeCamp</i></p>
     </header>
     <main>
         <!--Conteúdo-->
         <form id="survey-form">
             <div class="form-group">
-                <label for="name-label" id="name-label">Name</label>
+                <label for="name-label" id="name-label">Nome <strong>(Obrigatório)</strong></label>
                 <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
             </div>
             <div class="form-group">
-                <label for="email-label" id="email-label">E-mail</label>
+                <label for="email-label" id="email-label">E-mail <strong>(Obrigatório)</strong></label>
                 <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" required>
             </div>
 
             <div class="form-group age">
-                <label for="number-label" id="number-label">Age</label>
+                <label for="number-label" id="number-label">Idade <strong>(Opcional)</strong></label>
                 <input type="number" name="number" id="number" min="1" max="100" placeholder="Digite a sua idade">
             </div>
 
@@ -113,9 +116,7 @@
                 <textarea name="text" id="text" cols="30" rows="10"
                     placeholder="Digite seu comentário aqui..."></textarea>
             </div>
-            <div class="form-grup">
-                <input type="file" name="file" id="file">
-            </div>
+
             <div class="form-group">
                 <button type="submit" id='submit' class="submit-button">Enviar</button>
             </div>
@@ -125,9 +126,8 @@
     <footer>
         <p id="footer_page">&copy; Geziael Thiago</p>
     </footer>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <script src="js/main.js"></script>
+
 </body>
+<script src="js/main.js"></script>
 
 </html>
