@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-image: url('/img/pexels-etkin-celep-11970796\ \(1\).jpg');
+    background-size: cover;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(227, 87, 87);
+
+}
+
+main {
+    display: flex;
+    max-width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+#survey-form {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: white;
+    background-color: rgb(74, 87, 61);
+    flex: auto;
+}
+
+#name,
+#email,
+#number {
+    height: 3.5rem;
+    flex: auto;
+}
+
+#name-label,
+#email-label,
+#number-label,
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#dropdown {
+    height: 50px;
+    border: 1px solid rgb(38, 14, 7);
+    border-radius: 5px 5px 5px 5px;
+    font-size: 1em;
+    flex: auto;
+}
+
+textarea,
+#name,
+#email,
+#number,
+#dropdown {
+    font-size: 1em;
+    padding-left: 10px;
+}
+
+label {
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+textarea{
+    font-size: 1.5em;
+}
+textarea,
+.submit-button:hover {
+    border: 1px solid rgb(40, 19, 11);
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.submit-button {
+    flex: auto;
+    font-size: 1.2em;
+    height: 50px;
+}
+
+.submit-button:hover {
+    color: white;
+    background-color: rgb(233, 184, 120);
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_page {
+    flex: auto;
+}
