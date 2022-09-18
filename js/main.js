@@ -21,7 +21,6 @@ const db = firestore.collection("form");
 // criar o evento listener para acessar o form (html)
 
 submit.addEventListener('click', (e) => {
-
     //pegar os valores do formulário html (id)
     let nome = document.getElementById('name').value;
     let email = document.getElementById('email').value;
@@ -38,12 +37,14 @@ submit.addEventListener('click', (e) => {
     let bd = document.getElementById('BD').value;
     let comentario = document.getElementById('text').value;
     let submit = document.getElementById('submit');
-    e.preventDefault();
+   
 
     if (email=='' || nome=='') {
+        
         alert('Preencher os campos obrigatórios!');
 
     }else{
+        e.preventDefault();
         //salvar o form no banco de dados
     db.doc().set({
         Nome: nome,
