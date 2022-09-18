@@ -4,7 +4,7 @@ body {
     justify-content: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    background-image: url('/img/pexels-etkin-celep-11970796\ \(1\).jpg');
+    background-image: url('https://raw.githubusercontent.com/GeziaelThiagoPaes/Desafio_Formul-rio/main/img/pexels-etkin-celep-11970796%20(1).jpg');
     background-size: cover;
     align-items: center;
 }
